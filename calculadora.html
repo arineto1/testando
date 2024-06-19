@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+      #calculadora{
+        width: 30vw;
+        height: 70vh;
+        border: solid 2px black;
+        padding: 20PX;
+        margin: 100px auto;
+        background-color: black;
+      }
+      #divresultado{
+        width: 90%;
+        height: 10%;
+        border: solid 2px blue;
+        margin: 5px auto;
+      }
+      #botoes{
+        width: 60%;
+        height: 80%;
+        border: solid 2px red;
+        margin: 5px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 30PX;
+        
+      }
+      .botao{
+        width: 20%;
+        height: 10%;
+        border: solid 2px green;
+        margin: 5px auto;
+        flex-basis: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+      }
+      .botao:hover{
+        background-color: grey;
+      }
+      h1{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        color: white;
+      }
+     
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Valor 1</h1>
+        <input type="number" id="num1">
+        <h1>Valor 2</h1>
+        <input type="number" id="num2">
+        <hr>
+        <button onclick="soma()">SOMA</button>
+        <hr>
+        <h1 id="resultado"></h1>
+        <script src="calculadora.js"></script>
+    </div>
+    <div id="calculadora">
+        <h1>CALCULADORA 2° INFO</h1>
+        <div id="divresultado"></div>
+        <div id="botoes">
+            <div class="botao"><h1>1</h1></div>
+            <div class="botao"><h1>2</h1></div>
+            <div class="botao"><h1>3</h1></div>
+            <div class="botao"><h1>4</h1></div>
+            <div class="botao"><h1>5</h1></div>
+            <div class="botao"><h1>6</h1></div>
+            <div class="botao"><h1>7</h1></div>
+            <div class="botao"><h1>8</h1></div>
+            <div class="botao"><h1>9</h1></div>
+            <div class="botao"><h1>+</h1></div>
+            <div class="botao"><h1>0</h1></div>
+            <div class="botao"><h1>=</h1></div>
+        </div>
+    </div>
+
+</html>
